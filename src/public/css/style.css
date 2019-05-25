@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: #0e141b;
+	background-color: #0b1013;
 	color: #ffffff;
 }
 
@@ -11,14 +11,14 @@ img {
 }
 
 #interface {
-	background-color: #070a0e;
+	background-color: #0b1013;
 	width: 100%;
 }
 
 section {
 	width: 86%;
 	float: left;
-	background-color: #070a0e;
+	background-color: #0b1013;
 }
 
 .hero-container.text-center {
