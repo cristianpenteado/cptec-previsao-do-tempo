@@ -1,0 +1,25 @@
+{
+  "name": "cptec-previsao-do-tempo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cristianpenteado/cptec-previsao-do-tempo.git"
+  },
+  "author": "Cristian Penteado <cristianpenteado@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.0"
+  },
+  "bugs": {
+    "url": "https://github.com/cristianpenteado/cptec-previsao-do-tempo/issues"
+  },
+  "homepage": "https://github.com/cristianpenteado/cptec-previsao-do-tempo#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "description": ""
+}

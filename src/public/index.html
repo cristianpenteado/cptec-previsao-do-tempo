@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="FaviconIcon" href="favicon.ico" type="image/x-icon" />
+		<title>Previsao do Tempo</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="js/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div id="interface" class="container-fluid">
+			<section>
+				<img
+					src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png"
+					width="60"
+					height="60"
+				/>
+				<div class="hero-container text-center">
+					<h1>Previsão do Tempo</h1>
+
+					<form id="form-id" action="/">
+						<input
+							id="search"
+							class="form-control"
+							type="text"
+							autofocus="true"
+							placeholder="Digite o nome de uma cidade brasileira"
+						/>
+						<input type="submit" class="btn btn-primary" value="Pesquisar">
+					</form>
+					<div id="content"></div>
+				</div>
+			</section>
+			<aside>
+				<p>Fonte: <wbr><a class="btn-link" href="http://servicos.cptec.inpe.br/XML/">CPTEC/INPE</a></wbr></p>
+			</aside>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
