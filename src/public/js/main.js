@@ -1,16 +1,18 @@
 $(document).ready(function () {
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    const name = urlParams.get('nome');
+    const uf = urlParams.get('uf');
     let numberOfCitys = 1;
-    const url = window.location.href;
-    const param = url.split('?');
 
-    if (param[1]) {
+    if (id) {
         $.ajax({
             type: 'GET',
-            url: `http://servicos.cptec.inpe.br/XML/cidade/7dias/${param[1]}/previsao.xml`,
+            url: `http://servicos.cptec.inpe.br/XML/cidade/7dias/${id}/previsao.xml`,
             dataType: 'xml',
             success: (xml) => {
-                afterClick(xml, param[2], param[3]);
+                afterClick(xml, name, uf);
             }
         });
     }
@@ -38,8 +40,6 @@ $(document).ready(function () {
                         })
                     });
 
-
-
                     citys.forEach((element) => {
                         $.ajax({
                             type: 'GET',
@@ -47,7 +47,7 @@ $(document).ready(function () {
                             dataType: 'xml',
                             success: (xml) => {
                                 $('<ul id="list"></ul>').appendTo('#content')
-                                $(`<a href="?${element.id}?${element.nome}?${element.uf}" onclick="afterClick(xml,element.nome, element.uf)"></a><br/>`).html(`${element.nome} - ${element.uf}`).appendTo('#list');
+                                $(`<a href="?id=${element.id}&nome=${encodeURIComponent(element.nome)}&uf=${element.uf}" onclick="afterClick(xml,element.nome, element.uf)"></a><br/>`).html(`${element.nome} - ${element.uf}`).appendTo('#list');
 
                                 numberOfCitys++;
                             }

@@ -25,4 +25,4 @@ Basta clicar sobre o nome da cidade deseja e será exibido uma tabela com inform
 
 É gerado um link compartilhável para que possa ser enviado para outras pessoas sobre determinada cidade.
 
-![url.png](https://ap.imagensbrasil.org/images/2019/05/25/url.png)
+![url05a3eccf9c36845b.png](https://ap.imagensbrasil.org/images/2019/06/18/url05a3eccf9c36845b.png)
